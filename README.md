@@ -9,7 +9,7 @@ Required R libraries: ggplot2
 
 The CNVlocator contains four step:
 
-1) Prepocessbam - Process bam file to generate bedgraph file contains read accumulation for every base and count file contains read count for every chromosome
+1) Prepocessbam - Process bam file to generate bedgraph file contains read accumulation for every base and count file contains read count for every chromosome. Input should be sorted bam file.
 
 2) Intervalcalls - The read accumulation for user defined window/intervals and sliding windows. For better result, use the median read length as the window size and 1/5th of the median read length as the sliding window size
 
