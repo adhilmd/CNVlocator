@@ -11,7 +11,7 @@ The CNVlocator contains four step:
 
 1) Prepocessbam - Process bam file to generate bedgraph file contains read accumulation for every base and count file contains read count for every chromosome
 
-2) Intervalcalls - The read accumulation for user defined window/intervals and sliding windows. For better result, use the median read length as the window and 1/5th of the median read length as the sliding window
+2) Intervalcalls - The read accumulation for user defined window/intervals and sliding windows. For better result, use the median read length as the window size and 1/5th of the median read length as the sliding window size
 
 3) cnvlocator - This will identifies CNVs by comparing the test sample vs control sample and other user defined parameters
 
