@@ -6,7 +6,7 @@ import glob, os
 
 def argparser():
     parser = argparse.ArgumentParser(prog = '''\nintervals_sw.py''', description='''\n----------Sliding windows with read accumlation and fold change--------- \n
-    \n[Date: 7th March 2018], \n[help: python intervals_sw.py -h]\n''', usage = 'intervals_sw.py *args')
+    \n[Date: 7th March 2018], \n[help: python intervals.py -h]\n''', usage = 'intervals.py *args')
     parser.add_argument('-w','--intervalfile', type=str, dest='w', help="File containing chromosome with size, two coloumn chromosome and size (Optional)", action = 'store', default="NA")
     parser.add_argument('-m','--mainpath', type=str, dest='m', help="mainpath where the bedgraph file and count files are present (Mandatory)", action = 'store', required = True)
     parser.add_argument('-f','--fname', type=str, dest='fn', help="Comma seperated prefix input file names (Mandatory)", action = 'store', required = True)
