@@ -7,6 +7,16 @@ Required python dependencies: pybedtools, pandas, sklearn, numpy, pysal, scipy
 
 Required R libraries: ggplot2
 
+Input files required to run this tool: 
+
+1) sorted bam test and control files & 
+
+2) Interval file containing three columns chromosome, start and end (Optional) 
+
+Output files:
+
+Text files containing most probable CNV locations and CNV plot 
+
 The CNVlocator contains four step:
 
 1) Prepocessbam - Process bam file to generate bedgraph file contains read accumulation for every base and count file contains read count for every chromosome. Input should be sorted bam file.
