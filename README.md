@@ -9,13 +9,11 @@ Required R libraries: ggplot2
 
 Input files required to run this tool: 
 
-1) sorted bam test and control files & 
-
-2) Interval file containing three columns chromosome, start and end (Optional) 
+1) sorted bam test and control files & 2) (Optional) Interval file containing three columns chromosome, start and end
 
 Output files:
 
-Text files containing most probable CNV locations and CNV plot 
+1) Text files containing most probable CNV locations & 2) CNV plot 
 
 The CNVlocator contains four step:
 
