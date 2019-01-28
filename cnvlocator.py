@@ -118,7 +118,7 @@ def main():
     outfile = args.ot+"/"+args.pf+".alldat"
     dfall.to_csv(outfile,sep="\t",header=True,index=False)
     outfile = args.ot+"/"+args.pf+".cnvcalls"
-    result.to_csv(outfile,sep="\t",header=False,index=False)
+    result.to_csv(outfile,sep="\t",header=True,index=False)
     return 0
 
 if (__name__ == "__main__"):
