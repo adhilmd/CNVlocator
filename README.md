@@ -1,4 +1,7 @@
 # CNVlocator
+
+Author: Mohamood Adhil and Ramveer Choudhary
+
 Accurate CNV (Amplification and Deletion) calling by comparing test and control samples (BAM files)
 
 Required tools to run the CNV locator: python2.7, R, genomeCoverageBed, samtools
