@@ -71,7 +71,7 @@ data[which(data$Type != "NO"),"size"] = 1
 if (cloc != "NA"){
   xtag = paste("chromosome",";",clocval[1],"_",clocval[2],"-",clocval[3],sep="")
   p <- ggplot(data,aes(x = start, y = lfc, colour = colour)) + geom_point(alpha = data$opacity,size=data$size,colour=data$colour) + ylim(llc,ulc) +
-    theme(panel.grid.minor = element_blank()) + theme(legend.position="none") + xlab(xtag) + ylab("Log2FoldChange") + geom_hline(yintercept = c(-lfc,lfc)) 
+    theme(panel.grid.minor = element_blank()) + theme(legend.position="none") + xlab(xtag) + ylab("Log2FoldChange") + geom_hline(yintercept = c(-lfc,lfc)) + theme_bw()
 } else {
 p <- ggplot(data,aes(x = order, y = lfc, colour = colour)) + geom_point(alpha = data$opacity,size=data$size,colour=data$colour) + ylim(llc,ulc) + scale_x_continuous(breaks=c(1,te$order[-17]+1),labels=te$chr) +
   theme(panel.grid.minor = element_blank()) + theme(legend.position="none") + xlab ("Chromosome") + ylab("Log2FoldChange") + geom_hline(yintercept = c(-lfc,lfc)) + theme_bw()
