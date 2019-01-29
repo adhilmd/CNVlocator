@@ -27,3 +27,6 @@ The CNVlocator contains four step:
 3) cnvlocator - This will identifies CNVs by comparing the test sample vs control sample and other user defined parameters
 
 4) cnvplot - This will help to visualize the CNVs across the genome or user defined location
+
+![test_cnvplot](https://user-images.githubusercontent.com/18418058/51907337-c2c99b80-23c6-11e9-936e-78b3451a7c81.jpeg)
+
