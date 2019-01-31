@@ -33,8 +33,7 @@ def cnvcalls(sc,gapvalue):
     gp = gapvalue+1
     allte = sc
     cnt = 1
-    gte = []
-    mg = []
+    gte, mg = ([] for i in range(2))
     for j in range(0, len(allte)):
         if (j < len(allte)-1 and cnt == 1):
             gte.append(allte[j])
@@ -53,12 +52,7 @@ def cnvcalls(sc,gapvalue):
     return(mg)
 
 def mergecalls(dfall,mc,cnvtype):
-    chrc = []
-    start = []
-    end = []
-    lfc = []
-    pvaltest = []
-    pvalref = []
+    chrc, start, end, lfc, pvaltest, pvalref = ([] for i in range(6))
     for i in mc:
         te = dfall.loc[min(i):max(i)]
         cr = te.chr.unique().tolist()
